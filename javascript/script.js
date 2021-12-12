@@ -1,22 +1,4 @@
-class Pesquisa {
-    PaginaPrincipal(data) {
-        let escolherData = new Usuario()
-        escolherData.ReceberData(data)
-
-        let visu = new Visualizar()
-        visu.Visualiza(escolherData)
-    }
-
-    Selecao(data) {
-        let escolherData = new Usuario()
-        escolherData.ReceberData(data)
-
-        let visu = new Visualizar()
-        visu.Visualiza(escolherData)
-    }
-}
-
-let pesquisa = new Pesquisa
+let pesquisar = new Pesquisa
 
 function modificarData() {
     let data = new Date()
@@ -24,14 +6,15 @@ function modificarData() {
     let mes = data.getMonth()
     let ano = data.getFullYear()
 
-    return `${ano}/${mes + 1}/${dia}`
+    return `${ano}-${mes + 1}-${dia}`
 }
 
-pesquisa.PaginaPrincipal(modificarData())
+pesquisar.PaginaPrincipal(modificarData())
 
-document.getElementById("submit").addEventListener("click", () => {
+document.querySelector("#submit").addEventListener("click", () => {
+    console.log("botao funciona")
     let data = document.querySelector("#data")
     let dateString = data.value
     console.log(data.value)
-    pesquisa.Selecao(dateString)
+    pesquisar.Selecao(dateString)
 })

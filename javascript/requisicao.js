@@ -1,5 +1,7 @@
 class Usuario {
+
     constructor() {
+        console.log("to na model")
         this.data = ""
         this.titulo = ""
         this.detalhes = ""
@@ -7,9 +9,12 @@ class Usuario {
     }
 
     ReceberData(data) {
+
         let request = new XMLHttpRequest()
+        console.log("Recebe data ta ok")
 
         request.addEventListener("load", () => {
+            console.log("request event funciona")
             if (request.status == 200) {
                 let dados = this.ProcessoResponse(request.responseText)
                 this.Atualizar(dados)
@@ -34,19 +39,19 @@ class Usuario {
     }
 
     PegarData() {
-        return this.data
+        return this.data;
     }
 
     PegarTitulo() {
-        return this.titulo
+        return this.titulo;
     }
 
     PegarDetalhes() {
-        return this.detalhes
+        return this.detalhes;
     }
 
     PegarImagem() {
-        return this.imagem
+        return this.imagem;
     }
 
 }

@@ -1,10 +1,11 @@
 /*configuração geral da página*/
+@import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300&display=swap");
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
+    font-family: 'Saira Condensed', sans-serif;
     color: #fff;
 }
 
@@ -51,6 +52,7 @@ html {
 
 #data {
     cursor: text;
+    font-size: 20px;
 }
 
 #submit {
@@ -59,17 +61,31 @@ html {
     padding: 0.55%;
     cursor: pointer;
     margin-left: 30px;
+    font-size: 20px;
 }
 
 .tituloMain {
     text-align: center;
     margin-top: 25px;
+    font-size: 30px;
+    transition: 0.3s;
+}
+
+.tituloMain:hover {
+    color: #220aad;
+}
+
+.descricaoFoto {
+    font-size: 21px;
+}
+
+.imagem {
+    text-align: center;
 }
 
 /*footer*/
 
 footer {
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;

@@ -1,15 +1,15 @@
 class Visualizar {
     Visualiza(data) {
-        let titulo = document.getElementsByClassName("tituloMain")
+        let titulo = document.querySelector(".tituloMain")
         titulo.textContent = data.PegarTitulo()
 
-        let detalhes = document.getElementsByClassName("descricaoFoto")
+        let detalhes = document.querySelector(".descricaoFoto")
         detalhes.textContent = data.PegarDetalhes()
 
-        let imagem = document.getElementById("imagem")
+        let imagem = document.querySelector("#imagem")
         imagem.src = data.PegarImagem()
 
-        let date = document.getElementsByClassName("data")
+        let date = document.querySelector(".data")
         date.textContent = data.PegarData()
     }
 }
