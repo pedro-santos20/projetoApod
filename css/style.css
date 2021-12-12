@@ -1,0 +1,77 @@
+/*configuração geral da página*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    color: #fff;
+}
+
+html {
+    background-color: #000;
+}
+
+/*configuração do header da página*/
+
+.header {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: #dad8d8a6; */
+    background-image: url("https://super.abril.com.br/wp-content/uploads/2019/12/james-stone_gettyimages_estrela_brilhante_orion.jpg?quality=90&strip=info&resize=680,453");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid #7988e0;
+}
+
+.tituloHeader {
+    margin-top: 3.8%;
+}
+
+.header img {
+    width: 20%;
+}
+/*configuração do conteúdo principal(main) da página*/
+
+.principal {
+    text-align: center;
+}
+
+#data, #submit {
+    color: #000;
+    border: none;
+    text-transform: uppercase;
+    padding: 0.35%;
+    border-radius: 80px;
+    margin-top: 20px;
+    height: 50px;
+    width: 250px;
+}
+
+#data {
+    cursor: text;
+}
+
+#submit {
+    background-color: #2808dd;
+    color: #fff;
+    padding: 0.55%;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.tituloMain {
+    text-align: center;
+    margin-top: 25px;
+}
+
+/*footer*/
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
